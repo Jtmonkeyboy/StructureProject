@@ -11,4 +11,6 @@
 
 #include "Node.hpp"
 
+template <class Type>
+
 #endif /* LinearNode_hpp */
