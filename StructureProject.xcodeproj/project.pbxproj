@@ -45,6 +45,7 @@
 		CB553230220A2713003A4686 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		CB553234220A2F10003A4686 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		CBFC8176220CBBED00E88FA1 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		CBFC8177220CC84200E88FA1 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CBFC8176220CBBED00E88FA1 /* List.hpp */,
+				CBFC8177220CC84200E88FA1 /* LinkedList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
