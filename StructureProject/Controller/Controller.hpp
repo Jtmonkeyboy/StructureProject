@@ -10,6 +10,7 @@
 #define Controller_hpp
 
 #include <iostream>
+#include "../Model"
 using namespace std;
 
 class Controller
