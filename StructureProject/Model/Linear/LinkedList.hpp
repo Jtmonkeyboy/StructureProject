@@ -34,7 +34,7 @@ public:
     Type getFromInex(int index);
     Type remove(int index);
 //    Type setAtIndex(int index, Type item);
-//    bool contains(Type item);
+    bool contains(Type item);
 }
 
 LinkedList<Type> :: LinkedList()
@@ -104,6 +104,82 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
 
+Type LinkedList<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < this->size);
+    
+    LinearNode<Type> * current = front;
+    LinearNode<Type> * toBeRemoved = nullptr;
+    LinearNode<Type> * previous = nullptr;
+    
+    Type removedData;
+    
+    if(index == 0)
+    {
+        toBeRemoved = first;
+        this->front = this->front->getNextNode();
+    }
+    else
+    {
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNextNode();
+        }
+        
+        toBeRemoved = current;
+        
+        if(index == this->size - 1)
+        {
+            previous->setNextNode(nullptr);
+            end = previous;
+        }
+        else
+        {
+            current = toBeRemoved->getNextNode();
+            previous->setNextNode(current);
+        }
+    }
+    this->size -= 1;
+    
+    removedData = toBeRemoved->getData();
+    delete toBeRemoved;
+    return removedData;
+}
+
+bool LinkedList<Type> :: contaions(Type thingToFind)
+{
+    bool exists = false;
+    
+    LinearNode<Type> * searchPointer = front;
+    
+    for(int index = 0; index < getSize(); index++)
+    {
+        if(searchPointer->getData() == thingToFind)
+        {
+            return true;
+        }
+        searchPointer = searchPointer->getNextNode();
+    }
+    
+    return exists;
+}
 
 #endif /* LinkedList_hpp */

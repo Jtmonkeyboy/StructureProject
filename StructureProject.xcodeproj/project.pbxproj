@@ -44,6 +44,7 @@
 		CB55322F220A267D003A4686 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		CB553230220A2713003A4686 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		CB553234220A2F10003A4686 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		CB95CF9922120D34003EF058 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		CBFC8176220CBBED00E88FA1 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		CBFC8177220CC84200E88FA1 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +152,7 @@
 			children = (
 				CBFC8176220CBBED00E88FA1 /* List.hpp */,
 				CBFC8177220CC84200E88FA1 /* LinkedList.hpp */,
+				CB95CF9922120D34003EF058 /* Queue.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
