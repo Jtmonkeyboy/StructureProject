@@ -11,6 +11,7 @@
 
 #include "../Resources/CrimeData.hpp"
 #include "../Resources/Music.hpp"
+#include "../Model/Linear/LinkedList.hpp"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -24,6 +25,8 @@ class FileController
 public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
     static vector<Music> musicDataToVector(string filename);
+    static LinkedList<CrimeData> readCrimeDataToList(string filename);
+    static LinkedList<Music> musicDataToList(string filename);
 };
 
 #endif /* FileController_hpp */

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB00F2982224746A008F3CF9 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB00F2962224746A008F3CF9 /* LinearTester.cpp */; };
 		CB1A517921FF8BED00CA95D3 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB1A517821FF8BED00CA95D3 /* Runner.cpp */; };
 		CB1A517C21FF8BFC00CA95D3 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB1A517A21FF8BFC00CA95D3 /* Controller.cpp */; };
 		CB553225220A166D003A4686 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB553223220A166D003A4686 /* Timer.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB00F2962224746A008F3CF9 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
+		CB00F2972224746A008F3CF9 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 		CB1A516821FF8AF700CA95D3 /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1A517821FF8BED00CA95D3 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		CB1A517A21FF8BFC00CA95D3 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB00F295222473F7008F3CF9 /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				CB00F2962224746A008F3CF9 /* LinearTester.cpp */,
+				CB00F2972224746A008F3CF9 /* LinearTester.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
 		CB1A515F21FF8AF700CA95D3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 		CB1A516A21FF8AF700CA95D3 /* StructureProject */ = {
 			isa = PBXGroup;
 			children = (
+				CB00F295222473F7008F3CF9 /* Testers */,
 				CB1A517721FF8BD200CA95D3 /* Resources */,
 				CB1A517621FF8BC600CA95D3 /* Diagrams */,
 				CB1A517521FF8BBC00CA95D3 /* Controller */,
@@ -225,6 +238,7 @@
 				CB55322D220A2355003A4686 /* Music.cpp in Sources */,
 				CB1A517C21FF8BFC00CA95D3 /* Controller.cpp in Sources */,
 				CB553228220A1EC7003A4686 /* FileController.cpp in Sources */,
+				CB00F2982224746A008F3CF9 /* LinearTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

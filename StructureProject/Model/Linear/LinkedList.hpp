@@ -31,12 +31,13 @@ public:
     //Structor methods
     void add(Type item);
     void addAtIndex(int index, Type item);
-    Type getFromInex(int index);
+    Type getFromIndex(int index);
     Type remove(int index);
 //    Type setAtIndex(int index, Type item);
     bool contains(Type item);
-}
+};
 
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
@@ -44,6 +45,7 @@ LinkedList<Type> :: LinkedList()
     this->size = 0;
 }
 
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
@@ -55,6 +57,7 @@ LinkedList<Type> :: ~LinkedList()
     }
 }
 
+template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -73,6 +76,7 @@ void LinkedList<Type> :: add(Type item)
     this->size += 1;
 }
 
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this-> size);
@@ -82,7 +86,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
     else
     {
-        LinearNide<Type> * toBeAdded = new LinearNode<Type>(item);
+        LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
         if(index == 0)
         {
             toBeAdded->setNextNode(front);
@@ -104,6 +108,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 
+template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -121,6 +126,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
     return data;
 }
 
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -133,7 +139,7 @@ Type LinkedList<Type> :: remove(int index)
     
     if(index == 0)
     {
-        toBeRemoved = first;
+        toBeRemoved = front;
         this->front = this->front->getNextNode();
     }
     else
@@ -164,7 +170,8 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
 }
 
-bool LinkedList<Type> :: contaions(Type thingToFind)
+template <class Type>
+bool LinkedList<Type> :: contains(Type thingToFind)
 {
     bool exists = false;
     
@@ -180,6 +187,24 @@ bool LinkedList<Type> :: contaions(Type thingToFind)
     }
     
     return exists;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getEnd()
+{
+    return this->end;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getFront()
+{
+    return this->front;
+}
+
+template <class Type>
+int LinkedList<Type> :: getSize() const
+{
+    return this->size;
 }
 
 #endif /* LinkedList_hpp */

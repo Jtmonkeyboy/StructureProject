@@ -32,7 +32,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 
 template <class Type>
 Queue<Type> :: Queue() : LinkedList<Type>()
@@ -85,7 +85,7 @@ template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
-    Type returned == this->front-> getData();
+    Type returned = this->front-> getData();
     
     LinearNode<Type> * removed = this->front;
     this->front = removed->getNextNode();

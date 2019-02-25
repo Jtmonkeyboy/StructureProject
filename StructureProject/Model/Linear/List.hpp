@@ -19,7 +19,7 @@ protected:
 public:
     //List operations
     virtual void add(Type item) = 0;
-    virtual coid addAtIndex(int index, Type item) = 0;
+    virtual void addAtIndex(int index, Type item) = 0;
     virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
     //Helper accessor methods
