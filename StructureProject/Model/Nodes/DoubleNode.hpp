@@ -26,8 +26,8 @@ public:
     DoubleNode<Type> * getNext();
     
     void setPrevious(DoubleNode<Type> * previous);
-    void setNext(DoubleNode<Type * next);
-}
+    void setNext(DoubleNode<Type> * next);
+};
 
 template <class Type>
 DoubleNode<Type> :: DoubleNode() : Node<Type>()
