@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		CB00F2962224746A008F3CF9 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		CB00F2972224746A008F3CF9 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
+		CB1350342278C1C80006DFFC /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		CB1A516821FF8AF700CA95D3 /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1A517821FF8BED00CA95D3 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		CB1A517A21FF8BFC00CA95D3 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -90,6 +91,17 @@
 			path = Testers;
 			sourceTree = "<group>";
 		};
+		CB1350332278C1A70006DFFC /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A465222665729006B45B5 /* BinarySearchTree.hpp */,
+				CB1350342278C1C80006DFFC /* AVLTree.hpp */,
+				CBD4E42A22383418007B2470 /* Graph.hpp */,
+				CB9A4651226653D7006B45B5 /* Tree.hpp */,
+			);
+			path = NonLinear;
+			sourceTree = "<group>";
+		};
 		CB1A515F21FF8AF700CA95D3 = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +133,9 @@
 		CB1A517321FF8B9D00CA95D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB1350332278C1A70006DFFC /* NonLinear */,
 				CB553232220A2EA7003A4686 /* Linear */,
 				CB553231220A2CDC003A4686 /* Nodes */,
-				CBD4E42A22383418007B2470 /* Graph.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,14 +196,12 @@
 		CB553232220A2EA7003A4686 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
-				CB9A4651226653D7006B45B5 /* Tree.hpp */,
 				CBFC8176220CBBED00E88FA1 /* List.hpp */,
 				CBFC8177220CC84200E88FA1 /* LinkedList.hpp */,
 				CB95CF9922120D34003EF058 /* Queue.hpp */,
 				CB95CF9A2212136A003EF058 /* Stack.hpp */,
 				CBD1B5BB221F332F00A5EBBB /* CircularList.hpp */,
 				CB21A0E8224016F500826F03 /* Array.hpp */,
-				CB9A465222665729006B45B5 /* BinarySearchTree.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
