@@ -10,7 +10,8 @@
 #define BinaryTreeTester_hpp
 
 #include "../Model/Nodes/BinaryTreeNode.hpp"
-#include "../Model/Linear/BinarySearchTree.hpp"
+#include "../Model/NonLinear/BinarySearchTree.hpp"
+#include "../Model/NonLinear/AVLTree.hpp"
 #include <iostream>
 
 class BinaryTreeTester
