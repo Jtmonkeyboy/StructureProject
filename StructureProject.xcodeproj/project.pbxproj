@@ -15,7 +15,6 @@
 		CB553228220A1EC7003A4686 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB553226220A1EC7003A4686 /* FileController.cpp */; };
 		CB55322A220A22EE003A4686 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB553229220A22EE003A4686 /* CrimeData.cpp */; };
 		CB55322D220A2355003A4686 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB55322C220A2355003A4686 /* Music.cpp */; };
-		CBCB4E1F22611FB600350318 /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBCB4E1E22611FB600350318 /* BinaryTreeTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,8 +57,6 @@
 		CB9A4651226653D7006B45B5 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		CB9A465222665729006B45B5 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		CBCB4E1C22610E2200350318 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
-		CBCB4E1D22611E0F00350318 /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
-		CBCB4E1E22611FB600350318 /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
 		CBD1B5BA221F288500A5EBBB /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		CBD1B5BB221F332F00A5EBBB /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		CBD4E42A22383418007B2470 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
@@ -85,8 +82,6 @@
 				CB00F2972224746A008F3CF9 /* LinearTester.hpp */,
 				CB21A0E922401CA700826F03 /* GraphTester.hpp */,
 				CB21A0EA2240290A00826F03 /* GraphTester.cpp */,
-				CBCB4E1D22611E0F00350318 /* BinaryTreeTester.hpp */,
-				CBCB4E1E22611FB600350318 /* BinaryTreeTester.cpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -264,7 +259,6 @@
 			files = (
 				CB553225220A166D003A4686 /* Timer.cpp in Sources */,
 				CB21A0EB2240290A00826F03 /* GraphTester.cpp in Sources */,
-				CBCB4E1F22611FB600350318 /* BinaryTreeTester.cpp in Sources */,
 				CB55322A220A22EE003A4686 /* CrimeData.cpp in Sources */,
 				CB1A517921FF8BED00CA95D3 /* Runner.cpp in Sources */,
 				CB55322D220A2355003A4686 /* Music.cpp in Sources */,

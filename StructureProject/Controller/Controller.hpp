@@ -11,15 +11,20 @@
 
 #include <iostream>
 #include "../Model/Nodes/Node.hpp"
+#include "../Testers/LinearTester.hpp"
 #include "../Model/Nodes/LinearNode.hpp"
-#include "./FileController.hpp"
+#include "FileController.hpp"
 using namespace std;
 
 class Controller
 {
+private:
+    LinearTester myTest;
 public:
     void start();
     void usingNodes();
+    void testFiles();
+    void testLinear();
 };
 
 

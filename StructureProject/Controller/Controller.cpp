@@ -11,6 +11,9 @@
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("full path to file goes here");
+    usingNodes();
+    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -21,4 +24,17 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
     cout << wordHolder.getData() << endl;
+}
+/*
+void Controller :: testFiles()
+{
+    for(int index = 234; index <= 255; index++)
+    {
+        cout << index << ": contents are: " << nameOfVector[index] << endl;
+    }
+}*/
+
+void Controller :: testLinear()
+{
+    LinearTester mytest;
 }
